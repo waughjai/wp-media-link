@@ -8,10 +8,10 @@ namespace WaughJ\WPMediaLink
 
 	class WPMediaLink extends HTMLLink
 	{
-		public function __construct( int $id, $content )
+		public function __construct( int $id, $content, array $attributes = [] )
 		{
 			$image = new WPUploadImage( $id, 'full' );
-			parent::__construct( $image->getSource(), $content );
+			parent::__construct( $image->getSource(), $content, $attributes );
 		}
 	}
 }
