@@ -2,7 +2,7 @@
     "name": "waughj/wp-media-link",
     "description": "Class & WordPress shortcode for easily generating link to media file.",
     "keywords": [ "media", "wordpress", "link" ],
-    "license": "GPL-2.0-or-later",
+    "license": "AGPL-3.0-or-later",
     "authors": [
         {
             "name": "Jaimeson Waugh",
@@ -13,7 +13,7 @@
     "require": {
 		"php": ">=7.0",
         "waughj/html-link": ">=1.2.7",
-        "waughj/wp-upload-image": ">=0.1.2"
+        "waughj/wp-upload-image": ">=0.5.3"
     },
     "require-dev": {
 		"phpunit/phpunit": "*"

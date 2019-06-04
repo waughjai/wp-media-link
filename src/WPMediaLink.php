@@ -1,17 +1,16 @@
 <?php
 
 declare( strict_types = 1 );
-namespace WaughJ\WPMediaLink
-{
-	use WaughJ\HTMLLink\HTMLLink;
-	use WaughJ\WPUploadImage\WPUploadImage;
+namespace WaughJ\WPMediaLink;
 
-	class WPMediaLink extends HTMLLink
+use WaughJ\HTMLLink\HTMLLink;
+use WaughJ\WPUploadImage\WPUploadImage;
+
+class WPMediaLink extends HTMLLink
+{
+	public function __construct( int $id, $content, array $attributes = [] )
 	{
-		public function __construct( int $id, $content, array $attributes = [] )
-		{
-			$image = new WPUploadImage( $id, 'full' );
-			parent::__construct( $image->getSource(), $content, $attributes );
-		}
+		$image = new WPUploadImage( $id, 'full' );
+		parent::__construct( $image->getSource(), $content, $attributes );
 	}
 }
